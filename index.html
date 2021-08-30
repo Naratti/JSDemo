@@ -6,22 +6,21 @@
 <body>
 
 
-
-
-
-
 <p id="numero"> 0 </p>
 
-<img onclick="klikkaus()" src="egg.png" alt="" id="eggphoto">
+<img onclick="Painanta()" src="egg.png" alt="" id="eggphoto" width="400">
 
 <script>
-let klikkaukset = 0
-function Klikkaus(){
-    klikkaukset++
-        document.getElementById("numero").innerHTML = klikkaukset
-        if(klikkaukset > 5){
-            document.getElementById("eggphoto").src="brokenegg.png"
-            alert("LOPETA")
+
+    let klikkaukset = 0
+
+    function Painanta(){
+        klikkaukset++
+            document.getElementById("numero").innerHTML = klikkaukset
+            
+            if(klikkaukset > 5){
+                document.getElementById("eggphoto").src = "brokenegg.png"
+                alert("LOPETA")
         }
 }
 
