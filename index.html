@@ -1,9 +1,13 @@
 <button type="button" onclick="klikkaus()" >Nappula</button>
+
+<p id="numero"> 0 </p>
+
 <script>
-let klikkaus =0
+let klikkaukset =0
 function Klikkaus(){
     klikkaukset++
-        if(klikkaus > 5){
+        document.getElementById("numero").innerHTML = klikkaukset.toString()
+        if(klikkaukset > 5){
             alert("LOPETA")
         }
 }
