@@ -1,8 +1,18 @@
-<button type="button" onclick="klikkaus()" >Nappula</button>
+<head> 
+    <title>Munan klikkailua</title>
+
+</head>
+
+<body>
+
+
+
+
+
 
 <p id="numero"> 0 </p>
 
-<img src="/egg.png">
+<img onclick="klikkaus()" src="egg.png" alt="" id="eggphoto">
 
 <script>
 let klikkaukset = 0
@@ -10,9 +20,11 @@ function Klikkaus(){
     klikkaukset++
         document.getElementById("numero").innerHTML = klikkaukset
         if(klikkaukset > 5){
+            document.getElementById("eggphoto").src="brokenegg.png"
             alert("LOPETA")
         }
 }
 
-
 </script>
+
+</body>
